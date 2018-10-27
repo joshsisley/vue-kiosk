@@ -4,7 +4,7 @@
         <b-col class="breadcrumbs" cols="8" md="auto">
           <ul>
             <li v-on:click="step = 1" :class="classActive(1)">
-              <span></span><span>1.</span> Patient Info
+              <span></span><span>1.</span> Check In
             </li>
             <li v-on:click="step = 2" :class="classActive(2)">
               2. Appointment
@@ -43,7 +43,6 @@ export default {
 }
 .breadcrumbs {
   height: 54px;
-  margin: 0 0 30px 0;
 }
 .breadcrumbs ul {
   display: -ms-flexbox;
@@ -52,6 +51,7 @@ export default {
   flex-direction: row;
   height: 100%;
   position: relative;
+  padding-left: 0;
 }
 .active-crumb {
   color: rgb(22, 45, 61) !important;
