@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "eslint": "^5.8.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -25,7 +27,24 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "semi": [
+        2,
+        "always"
+      ],
+      "indent": 0,
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "no-tabs": 0,
+      "space-before-function-paren": 0,
+      "eol-last": "off",
+      "generator-star-spacing": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
